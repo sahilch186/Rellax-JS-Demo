@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rellax JS</title>
+    <style>
+        body {
+            padding: 0 5rem;
+            padding-bottom: 5rem;
+            margin: 0;
+            font-family: montserrat;
+            background: #eee;
+        }
+
+        h1 {
+            color: #ddd;
+            font-size: 8rem;
+            text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+            background-clip: text;
+            z-index: -1;
+            position: fixed;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 3.5rem;
+            z-index: 10;
+            position: absolute;
+            top: 25%;
+        }
+
+        div {
+            background: linear-gradient(45deg, #00b4db, #0083b0);
+            border-radius: 20px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            margin: 10%;
+            transform: rotateX(30deg);
+        }
+
+        div:nth-of-type(1) {
+            width: 150px;
+            height: 150px;
+            z-index: 2;
+            position: absolute;
+            top: 30%;
+            left:70%;
+        }
+
+        div:nth-of-type(2) {
+            width: 110px;
+            height: 110px;
+            z-index: 3;
+            position: absolute;
+            top: 70%;
+            left: 40%;
+        }
+
+        div:nth-of-type(3) {
+            width: 120px;
+            height: 120px;
+            z-index: 4;
+            position: absolute;
+            top: 150%;
+            left:10%;
+            bottom: 10%;
+        }
+
+        div:nth-of-type(4) {
+            width: 130px;
+            height: 130px;
+            z-index: 5;
+            position: absolute;
+            top: 50%;
+            left:50%;
+        }
+
+        div:nth-of-type(5) {
+            width: 140px;
+            height: 140px;
+            z-index: 6;
+            position: absolute;
+            top: 150%;
+            left:60%;
+        }
+
+        div:nth-of-type(6) {
+            width: 100px;
+            height: 100px;
+            z-index: 7;
+            position: absolute;
+            top: 120%;
+            left:20%;
+        }
+        
+        .pad{
+            padding: 3rem;
+            height: 30%;
+            bottom: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Rellax.js</h1>
+        <h2 class="rellax" data-rellax-speed="-10">Parallax Effect</h2>
+        <div class="rellax" data-rellax-speed="-8"></div>
+        <div class="rellax" data-rellax-speed="-6"></div>
+        <div class="rellax" data-rellax-speed="-4"></div>
+        <div class="rellax" data-rellax-speed="-2"></div>
+        <div class="rellax" data-rellax-speed="2"></div>
+        <div class="rellax" data-rellax-speed="4"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.10.0/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+</body></html>
